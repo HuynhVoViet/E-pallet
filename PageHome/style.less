@@ -4,9 +4,10 @@ body{
     text-decoration: none;
 }
 .pageHome{
+    
     display: flex;
     .left-sidebar{
-        flex: 1;
+        flex-basis: 30%;
         height: 663px;
         background-color: #236167;
         .left-info{
@@ -71,8 +72,114 @@ body{
     }
 
     .content{
-        flex-basis: 1000px;
+        flex-basis: 70%;
         height: 1000px;
+        display: flex;
+        flex-direction: column;
+        header{
+            flex-basis: 50% 81px;
+            display: flex;
+            .header-left{
+                flex-basis: 50%;
+                padding: 1rem;
+                a{
+                    text-decoration: none;
+                    color: #1CA7B4;
+                    font-size: 14px;
+                }
+            }
+            .header-right{
+                flex-basis: 50%;
+                text-align: right;
+                padding-top: 0.9rem;
+                padding-right: 1rem;
+                .header-right-button{
+                    button{
+                        margin-right: 1rem;
+                        width: 112px;
+                        height: 35px;
+                        background-color: #1F4447;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+        article{
+            display: flex;
+            margin: 1rem;
+            .content-form{
+                flex-basis: 80%;
+                display: grid;
+                grid-template-columns: 49% 49%;
+                grid-template-rows: 140px 310px 310px;
+               
+                grid-gap: 10px;
+                padding-top: 0.5rem;
+                .content-form-image{
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                }
+                .content-form-items{
+                    border:1px solid black;
+                    border-radius: 5px;
+                   .content-form-items-title{
+                       padding: 11px 20px;
+                       color: #142527;
+                       
+                   }
+
+                   .content-form-space{
+                       width: 292px;
+                       height: 239px;
+                       margin: 1rem auto; 
+                       position: relative;
+                        .content-form-space-block{
+                            
+                            .block-account{
+                                display: flex;
+                                padding-bottom: 1.5rem;
+                                .block-account-title{
+                                    flex-basis: 40%;
+                                }
+
+                                button{
+                                    width: 162px;
+                                    height: 38px;
+                                    flex-basis: 60%;
+                                }
+                            }
+                            .block-management{
+                                line-height: 1.5rem;
+                                padding-bottom: 1.5rem;
+                                .block-management-money{
+                                    button{
+                                        margin: 0px 5px 0px 0px;
+                                        height: 36px;
+                                    }
+                                    #btn-money{
+                                        width: 77px;
+                                    }
+                                }
+                            }
+                            .block-button{
+                                position: absolute;
+                                right: 0px;
+                                bottom: 0px;
+                                button{
+                                    width: 105px;
+                                    height: 40px;
+                                    background-color: #1F4447;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+            .content-slide-right{
+                flex-basis: 20%;
+            }
+        }
         
     }
 }
