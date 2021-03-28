@@ -1,0 +1,66 @@
+body {
+  width: 100%;
+  height: auto;
+  text-decoration: none;
+}
+.pageHome {
+  display: flex;
+}
+.pageHome .left-sidebar {
+  flex: 1;
+  height: 663px;
+  background-color: #236167;
+}
+.pageHome .left-sidebar .left-info {
+  height: 603px;
+}
+.pageHome .left-sidebar .left-info .left-info-logo {
+  text-align: center;
+  height: 78.28px;
+}
+.pageHome .left-sidebar .left-info .left-info-control {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 121px;
+  background-color: #227F88;
+}
+.pageHome .left-sidebar .left-info .left-info-control .left-info-control-item {
+  margin: 1.5rem 1.5rem;
+}
+.pageHome .left-sidebar .left-info .left-info-control .left-info-control-item p {
+  color: white;
+}
+.pageHome .left-sidebar .left-info .left-info-menu {
+  height: 196px;
+}
+.pageHome .left-sidebar .left-info .left-info-menu .left-info-menu-content {
+  padding: 2rem 4rem;
+}
+.pageHome .left-sidebar .left-info .left-info-menu .left-info-menu-content ul {
+  list-style: none;
+  color: #142527;
+}
+.pageHome .left-sidebar .left-info .left-info-menu .left-info-menu-content ul li {
+  padding: 0.5rem;
+}
+.pageHome .left-sidebar .socials {
+  height: 35px;
+}
+.pageHome .left-sidebar .socials ul {
+  width: 100%;
+  list-style: none;
+  text-align: center;
+}
+.pageHome .left-sidebar .socials ul li {
+  display: inline-block;
+}
+.pageHome .left-sidebar .socials ul li img {
+  height: 35px;
+  width: 35px;
+  padding: 0px 30px;
+}
+.pageHome .content {
+  flex-basis: 1000px;
+  height: 1000px;
+}
